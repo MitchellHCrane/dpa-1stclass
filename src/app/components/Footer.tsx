@@ -7,24 +7,38 @@ const Footer = () => {
         <div className="mt-8 md:mt-0 mx-8 md:mx-0">
           <h3 className="text-white text-lg mb-2">Contact</h3>
           <p className="text-white text-sm leading-4 m-0">
-            Phone: <a href="tel:385-999-1871">(385)-999-1871</a>
+            Phone:{" "}
+            <a
+              href="tel:385-999-1871"
+              className="text-[#2ca4f2] cursor-pointer"
+            >
+              (385)-999-1871
+            </a>
           </p>
           <p className="text-white text-sm leading-4 m-0">
-            Fax: (801)-303-7083
+            Fax: <span className="text-[#2ca4f2]">(801)-303-7083</span>
           </p>
           <p className="text-white text-sm leading-4 m-0">
             Email:{" "}
-            <a href="mailto:loans@troywarner.com">loans@troywarner.com</a>
+            <a
+              className="text-[#2ca4f2] cursor-pointer"
+              href="mailto:loans@troywarner.com"
+            >
+              loans@troywarner.com
+            </a>
           </p>
         </div>
         <div className="mt-8 md:mt-0 mx-8 md:mx-0">
           <h3 className="text-white text-lg mb-2">License Info</h3>
           <p className="text-white text-sm leading-4 m-0">
-            Troy Warner (NMLS #102983)
-          </p>
-          <p className="text-white text-sm leading-4 m-0">
             Regulated by State of Utah Division of Real Estate NMLS #1843
           </p>
+          <a
+            className="text-[#2ca4f2] cursor-pointer text-sm"
+            href="https://1stclasshomemortgage.com/privacy-policy"
+          >
+            Privacy Policy
+          </a>
         </div>
         <div className="mt-8 md:mt-0 mx-8 md:mx-0">
           <h3 className="text-white text-lg mb-2">Address</h3>
@@ -36,6 +50,7 @@ const Footer = () => {
               href="https://goo.gl/maps/o97dcDxGxFcAcRheA"
               target="_blank"
               rel="noreferrer"
+              className="text-[#2ca4f2] cursor-pointer"
             >
               10808 River Front Parkway, Suite #3035,
               <br /> South Jordan, UT 84095

@@ -289,14 +289,16 @@ export default function Home() {
   };
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl text-center font-bold text-[#004e82] mb-8">
-        Assistance Programs
+      <h1 className="text-3xl text-center font-bold text-black mt-8 mb-10">
+        Downpayment Assistance Programs
       </h1>
       {assistancePrograms.map((program, index) => (
-        <div key={index} className="my-12 p-6 bg-white shadow-lg rounded-lg">
+        <div key={index} className="my-12 p-6 bg-gray-100 shadow-md rounded-lg">
           <div className="flex justify-between items-center">
             <h2
-              className="text-2xl font-bold text-[#004e82] cursor-pointer"
+              className={` ${
+                index % 2 !== 0 ? "text-[#004e82]" : "text-[#2ca4f2]"
+              } text-2xl font-bold cursor-pointer`}
               onClick={() => toggleDropdown(index)}
             >
               {program.title}
@@ -313,8 +315,8 @@ export default function Home() {
                   className="size-6 text-black cursor-pointer"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="m4.5 15.75 7.5-7.5 7.5 7.5"
                   />
                 </svg>
@@ -329,8 +331,8 @@ export default function Home() {
                   className="size-6 text-black cursor-pointer"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="m19.5 8.25-7.5 7.5-7.5-7.5"
                   />
                 </svg>
