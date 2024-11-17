@@ -290,8 +290,17 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl text-center font-bold text-black mt-8 mb-10">
-        Downpayment Assistance Programs
+        Down Payment Assistance Programs
       </h1>
+      <div className="text-center">
+        <a
+          href="../ultGuide.pdf"
+          download="DownPaymentAssistancePrograms.pdf"
+          className="bg-[#2ca4f2] hover:bg-[#004e82] text-white font-bold py-2 px-4 rounded"
+        >
+          Download The Ultimate Guide
+        </a>
+      </div>
       {assistancePrograms.map((program, index) => (
         <div key={index} className="my-12 p-6 bg-gray-100 shadow-md rounded-lg">
           <div className="flex justify-between items-center">
@@ -310,7 +319,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="size-6 text-black cursor-pointer"
                 >
@@ -326,7 +335,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="size-6 text-black cursor-pointer"
                 >
